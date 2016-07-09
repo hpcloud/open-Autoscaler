@@ -48,7 +48,7 @@ if [ ! -f $python_artifact ]; then
 fi
 
 if [ ! -f $icu_artifact ]; then
-	curl -OL http://iweb.dl.sourceforge.net/project/icu/ICU4C/52.1/$icu_artifact
+	curl -OL http://download.sourceforge.net/project/icu/ICU4C/52.1/$icu_artifact
 fi
 
 if [ ! -f $couchdb_artifact ]; then

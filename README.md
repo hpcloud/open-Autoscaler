@@ -30,7 +30,7 @@ Requirements of Cloudfoudry access:
 * `CF-AutoScaler` will invoke Cloud controller API to trigger scaling on target application. To achieve this, a UAA client id with  authorities `cloud_controller.read,cloud_controller.admin` is needed. You can create it using UAA command line tool:
 
 ```shell
-uaac target http://uaa.<cf-domain>
+uaac target https://uaa.<cf-domain>
 uaac token client get admin -s <cf uaa admin secret> 
 uaac client add cf-autoscaler-client \
     --authorized_grant_types client_credentials \

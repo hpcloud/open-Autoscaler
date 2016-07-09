@@ -9,8 +9,32 @@ packages:
   - tomcat
   - autoscaler_servicebroker
 properties:
-  tomcat.http.port:
+  autoscaler.autoscaler_api.host:
+    description: the host for the autoscaler_api
+  autoscaler.autoscaler_server.host:
+    description: autoscaler_server host
+  autoscaler.couchdb.host:
+    description: the host for the autoscaler's couchdb server
+  autoscaler_server.internal_auth.password:
+    description: autoscaler_server password
+  autoscaler_server.internal_auth.username:
+    description: autoscaler_server username
+  autoscaler_servicebroker.auth.password:
+    description: autoscaler_server password
+  autoscaler_servicebroker.auth.username:
+    description: autoscaler_server username
+  autoscaler.autoscaler_servicebroker.host:
+    description: the host for the autoscaler_servicebroker
+  couchdb.dbname:
+    description: couchdb dbname
+  tomcat.http.autoscaler_api.port:
+    description: api port
+  tomcat.http.autoscaler_api.route:
+    description: api route
+  tomcat.http.autoscaler_server.port:
+    description: server port
+  tomcat.http.autoscaler_server.route:
+    description: server route
+  tomcat.http.autoscaler_servicebroker.port:
     description: the http port for tomocat server
     default: 80
-  autoscaler.network.subnet:
-    description: the network subnet for deployment

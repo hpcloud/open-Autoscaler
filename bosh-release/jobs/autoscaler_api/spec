@@ -10,5 +10,12 @@ packages:
   - autoscaler_api
 properties:
   tomcat.http.port:
-    description: the http port for tomocat server
-    default: 80
+        description: the http port for the tomcat server
+        default: 80
+  tomcat.http.route:
+        description: the http route for the tomcat server
+        default: autoscaler_api
+  autoscaler_api.internal_auth.username:
+        description: the autoscaler-API's username
+  autoscaler_api.internal_auth.password:
+        description: the autoscaler-API's password

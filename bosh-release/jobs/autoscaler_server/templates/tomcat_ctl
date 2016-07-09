@@ -19,9 +19,6 @@ case $1 in
     mkdir -p $RUN_DIR
     mkdir -p $LOG_DIR
 
-    #config autoscaler server
-    network_subnet="<%= p("autoscaler.network.subnet") %>";
-    sed -i "s/couchdbHost=.*/couchdbHost=${network_subnet}.5/g" /var/vcap/packages/${BASE_NAME}/server/WEB-INF/classes/config.properties
     cp -r /var/vcap/packages/${BASE_NAME}/server /var/vcap/packages/tomcat/webapps
 
     #config server.xml

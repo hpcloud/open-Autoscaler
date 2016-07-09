@@ -15,6 +15,11 @@ export HOME=/var/vcap
 export LANG=en_US.UTF-8
 export LD_LIBRARY_PATH=/var/vcap/packages/couchdb/icu/lib:/var/vcap/packages/couchdb/spidermonkey/lib
 
+echo "=================================================================="
+echo "Environment for couchdb_ctl $1:"
+env | sort
+echo "=================================================================="
+
 case $1 in
 
   start)

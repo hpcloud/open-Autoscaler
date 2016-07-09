@@ -7,3 +7,16 @@ templates:
 packages:
   - pid_utils
   - couchdb
+properties:
+  couchdb.dbname:
+    description: dbname
+  couchdb.host:
+    description: host
+  couchdb.metric_prefix:
+    description: metric_prefix
+  couchdb.port:
+    description: port
+  couchdb.username:
+    description: the username
+  couchdb.password:
+    description: the password

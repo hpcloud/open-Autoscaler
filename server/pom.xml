@@ -49,9 +49,18 @@
 
 	<profiles>
 		<profile>
-			<id>unittest</id>
+			<id>hcf</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<build.profile.id>hcf</build.profile.id>
+			</properties>
+		</profile>
+		<profile>
+			<id>unittest</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
 				<build.profile.id>unittest</build.profile.id>

@@ -9,9 +9,9 @@ packages:
   - tomcat
   - autoscaler_server
 properties:
-  tomcat.http.port:
-    description: the http port for tomocat server
+  tomcat.http.autoscaler_server.port:
+    description: the http port for tomcat server
     default: 80
-  autoscaler.network.subnet:
-    description: the network subnet for deployment
+  autoscaler.couchdb.host:
+    description: the network host for the couchdb server
   
